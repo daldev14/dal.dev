@@ -5,11 +5,14 @@ import Hero from "@/components/Hero.astro";
 import Layout from "@/layouts/Layout.astro";
 import ProfileCheck from "@/components/icons/ProfileCheck.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
+import Projects from "@/components/Projects.astro";
+import Experience from "@/components/Experience.astro";
+import AboutMe from "@/components/AboutMe.astro";
 ---
 
-<Layout title="Welcome to daldev">
+<Layout title="Porfolio de Daniel - Desarrollador y Programador Web.">
   <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
+    <SectionContainer class="py-16 md:py-36" id="inicio">
       <Hero />
     </SectionContainer>
     <div class="space-y-24">
@@ -20,7 +23,7 @@ import SectionContainer from "@/components/SectionContainer.astro";
           <Briefcase class="size-8" />
           Experiencia laboral
         </h2>
-        <!-- <Expirience /> -->
+        <Experience />
       </SectionContainer>
 
       <SectionContainer id="proyectos">
@@ -28,10 +31,10 @@ import SectionContainer from "@/components/SectionContainer.astro";
           class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
         >
           <CodeIcon class="size-8" />
-          Porjects
+          Proyectos
         </h2>
 
-        <!-- <Projects /> -->
+        <Projects />
       </SectionContainer>
 
       <SectionContainer id="sobre-mi">
@@ -41,7 +44,7 @@ import SectionContainer from "@/components/SectionContainer.astro";
           <ProfileCheck class="size-8" />
           Sobre mí
         </h2>
-        <!-- <AboutMe /> -->
+        <AboutMe />
       </SectionContainer>
     </div>
   </main>
