@@ -2,6 +2,7 @@
 import Badge from "./Badge.astro";
 import IconLinkedIn from "./icons/LinkedIn.astro";
 import IconMail from "./icons/Mail.astro";
+import IconGitHub from "./icons/GitHub.astro";
 import SocialPill from "./SocialPill.astro";
 ---
 
@@ -18,30 +19,32 @@ import SocialPill from "./SocialPill.astro";
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>Disponible para trabajar</Badge>
+      <Badge>Trabajando</Badge>
     </a>
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Hey, soy daldev
+    Hey, soy Daniel
   </h1>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    +15 años de experiencia. <strong
-      >Ingeniero de Software y Creador de Contenido sobre Programación</strong
-    > de Barcelona, España 🇪🇸. Especializado en el desarrollo de aplicaciones web
-    únicas.
+    <strong>Licenciado en Informática Administrativa</strong> de Honduras, Tegucigalpa
+    🇭🇳. Especializado en el desarrollo de aplicaciones web únicas.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:damayalop@gmail.com">
       <IconMail class="size-4" />
-      Contáctame
+      damayalop@gmail.com
     </SocialPill>
     <SocialPill href="https://linkedin.com/in/danielamayal">
       <IconLinkedIn class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/daldev14">
+      <IconGitHub class="size-4" />
+      GitHub
     </SocialPill>
   </nav>
 </div>
