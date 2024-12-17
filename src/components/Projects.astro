@@ -4,6 +4,7 @@ import IconTailwind from "@/components/icons/Tailwind.astro";
 import IconGitHub from "@/components/icons/GitHub.astro";
 import IconLink from "@/components/icons/Link.astro";
 import LinkButton from "@/components/LinkButton.astro";
+import IconAstro from "@/components/icons/LogoAstro.astro";
 
 const TAGS = {
   NEXT: {
@@ -16,9 +17,23 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: IconTailwind,
   },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-[#BC52EE] text-white",
+    icon: IconAstro,
+  },
 };
 
 const PROJECTS = [
+  {
+    title: "Mocato",
+    description:
+      "Desarrollé una página web para mostrar los servicios y soluciones de Mocatohn, destacando un diseño limpio y moderno. Implementé un header intuitivo, una sección principal que resalta los servicios clave y áreas de contenido optimizadas para una navegación fluida y eficiente. Este proyecto me permitió perfeccionar mis habilidades en diseño de interfaces y garantizar una experiencia de usuario óptima.",
+    link: "http://mocatohn.com",
+    github: "https://github.com/daldev14/mocato-consulting",
+    image: "./projects/mocato.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  },
   {
     title: "HELPDESK",
     description:
