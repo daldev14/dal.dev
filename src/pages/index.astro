@@ -1,13 +1,15 @@
 ---
+import AboutMe from "@/components/AboutMe.astro";
+import Achievement from "@/components/AchievementCard/V1.astro";
 import Briefcase from "@/components/icons/Briefcase.astro";
 import CodeIcon from "@/components/icons/Code.astro";
+import Experience from "@/components/Experience.astro";
 import Hero from "@/components/Hero.astro";
 import Layout from "@/layouts/Layout.astro";
 import ProfileCheck from "@/components/icons/ProfileCheck.astro";
-import SectionContainer from "@/components/SectionContainer.astro";
 import Projects from "@/components/Projects.astro";
-import Experience from "@/components/Experience.astro";
-import AboutMe from "@/components/AboutMe.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Trophy from "@/components/icons/Trophy.astro";
 ---
 
 <Layout title="Porfolio de Daniel - Desarrollador y Programador Web.">
@@ -24,6 +26,17 @@ import AboutMe from "@/components/AboutMe.astro";
           Experiencia laboral
         </h2>
         <Experience />
+      </SectionContainer>
+
+      <SectionContainer id="logros">
+        <h2
+          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+        >
+          <Trophy class="size-8" />
+          Logros
+        </h2>
+
+        <Achievement />
       </SectionContainer>
 
       <SectionContainer id="proyectos">
